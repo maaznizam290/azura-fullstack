@@ -1,0 +1,118 @@
+.my-table {
+    min-width: 100%;
+    border-spacing: 0;
+    border-radius: 7px;
+    border: 1px solid var(--bg-gray);
+    border-top: none;
+}
+
+.my-table thead {
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.my-table thead tr {
+    border-radius: 7px 7px 0px 0px;
+}
+
+.my-table thead tr th {
+    background-color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.my-table thead tr th:first-child {
+    border-radius: 7px 0 0px 0px;
+}
+
+.my-table thead tr th:last-child {
+    border-radius: 0 7px 0px 0px;
+}
+
+.my-table th,
+.my-table td,
+.my-table tr {
+    border: none;
+    text-align: center;
+}
+
+.my-table th,
+.my-table td {
+    padding: 18px 15px;
+}
+
+.my-table tbody td {
+    border-bottom: 1px solid var(--bg-gray);
+}
+
+.my-table td {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.my-table-wrapper {
+    overflow: hidden;
+    max-height: calc(100vh - 86px);
+    overflow: auto;
+    border-radius: 7px;
+    background: var(--bg-dark);
+    margin-top: 12px;
+}
+
+.table-socials-wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 3px 6px;
+}
+
+.avatar-col .avatar {
+    margin: 0 14px 0 16px;
+}
+
+.avatar-col p {
+    text-align: left;
+}
+
+.table-price-o span {
+    margin: 0 0 0 6px;
+}
+
+.tbl-sort-icons {
+    margin: 2px 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .my-table thead tr th {
+        font-size: 12px;
+    }
+    .my-table td {
+        font-size: 14px;
+    }
+    .my-table tbody svg {
+        width: 17px;
+        height: 17px;
+    }
+    .my-table th,
+    .my-table td {
+        padding: 10px 8px;
+    }
+    .avatar-col .avatar {
+        width: 29px;
+        height: 29px;
+    }
+}
