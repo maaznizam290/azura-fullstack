@@ -1,0 +1,237 @@
+.nft-cards-row {
+    padding: 9px 0;
+}
+
+.nft-cards-row .col {
+    max-width: 33.33%;
+    width: 33.33%;
+    padding: 0 13px 0 0;
+    margin: 9px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .nft-cards-row .col {
+        max-width: 33.33%;
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .nft-cards-row .col {
+        max-width: 25%;
+        width: 25%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .nft-cards-row .col {
+        max-width: 20%;
+        width: 20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .nft-cards-row .col {
+        max-width: 14.285%;
+        width: 14.285%;
+    }
+}
+
+@media (min-width: 3000px) {
+    .nft-cards-row .col {
+        max-width: 10%;
+        width: 10%;
+    }
+}
+
+@media (min-width: 4000px) {
+    .nft-cards-row .col {
+        max-width: 9.09%;
+        width: 9.09%;
+    }
+}
+
+@media (min-width: 4500px) {
+    .nft-cards-row .col {
+        max-width: 8.33%;
+        width: 8.33%;
+    }
+}
+
+.nft-card {
+    margin: 3px auto;
+    width: 100%;
+    max-width: 330px;
+    padding: 12px;
+    background: var(--bg-dark);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-card .cs-hr {
+    display: block;
+    margin-top: auto;
+}
+
+.nft-card-title {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 10px auto;
+}
+
+.nft-card-img {
+    width: 100%;
+    min-width: 100%;
+    height: 215px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.nft-card-img img {
+    width: 100%;
+    max-width: 100%;
+    -webkit-transition: -webkit-transform .3s linear;
+    transition: -webkit-transform .3s linear;
+    -o-transition: transform .3s linear;
+    transition: transform .3s linear;
+    transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
+.nft-card:hover .nft-card-img img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.nft-card-list-wrapper {
+    padding: 6px 0;
+    margin-bottom: 3px;
+}
+
+.nft-card-list {
+    padding: 7px;
+}
+
+.nft-card-list p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.nft-card-list span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.nft-card-socials a {
+    margin: 0 7px;
+}
+
+.nft-card-socials svg {
+    margin: 2px 3px;
+}
+
+.nft-card-btn {
+    margin: 6px auto;
+    font-weight: 600;
+    font-size: 18px;
+    height: 40px;
+    width: 100%!important;
+    max-width: 175px;
+    padding: 4px 12px !important;
+}
+
+@media screen and (max-width: 985px) {
+    .nft-card-img {
+        height: 160px;
+    }
+    .nft-card-img img {
+        height: auto
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .nft-card-img {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nft-card-img {
+        min-height: 140px;
+        height: auto;
+    }
+    .nft-card {
+        min-width: 100%;
+        padding: 9px 9px 3px 9px;
+    }
+    .nft-cards-row .col {
+        width: 50%;
+        max-width: 50%;
+        margin: 3px 0;
+        padding: 0 9px 0 0;
+    }
+    .nft-card-title {
+        font-size: 17px;
+        margin: 8px auto;
+    }
+    .nft-card-list-wrapper {
+        padding: 6px 0;
+    }
+    .nft-card-list {
+        padding: 5px;
+    }
+    .nft-card-list p {
+        font-size: 13px;
+    }
+    .nft-card-list span {
+        font-size: 12px;
+    }
+    .nft-card-list span svg {
+        width: 13px;
+        height: 13px;
+        margin-right: 2px;
+    }
+    .nft-card-socials a {
+        margin: 0 4px;
+    }
+    .nft-card-socials svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .nft-card-img {
+        min-height: 100px;
+    }
+    .nft-cards-row .col {
+        padding: 0 5px 0 0;
+    }
+    .nft-card-title {
+        font-size: 15px;
+    }
+    .nft-card-list {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .nft-card-list span {
+        margin-left: auto;
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .nft-card-img {
+        min-height: 80px;
+    }
+    .nft-cards-row .col {
+        width: 100%;
+        max-width: 100%;
+    }
+}
