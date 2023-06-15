@@ -1,5 +1,5 @@
 require("dotenv").config();
-require("./strategies/discordstrategy");
+require("./strategies/discordstrategy.js");
 const express = require("express");
 const app = express();
 
@@ -11,11 +11,11 @@ const db = require("./database/database");
 const path = require("path");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const router = require('./routes/router')
+const router = require("./routes/router");
 
-app.use(cors())
-app.use(express.json())
-app.use(router)
+app.use(cors());
+app.use(express.json());
+app.use(router);
 
 // const corsOptions = {
 //   origin: "http://localhost:3001",
@@ -39,7 +39,6 @@ db.then(() => console.log("Connected to MongoDB.")).catch((err) =>
 const authRoute = require("./routes/auth");
 const dashboardRoute = require("./routes/dashboard");
 
-
 app.use(
   session({
     secret: "some random secret",
@@ -50,7 +49,7 @@ app.use(
     resave: false,
     name: "discord.oauth2",
     store: MongoStore.create({
-      mongoUrl: "mongodb+srv://musab:musab123@cluster1.runm9lr.mongodb.net/",
+      mongoUrl: "mongodb+srv://root:admin@cluster0.iqjcz.mongodb.net/",
     }),
   })
 );
@@ -104,4 +103,3 @@ app.get("/guilds", isAuthorized, (req, res) => {
   res.json(req.user.guilds);
 });
 // https://discordapp.com/developers/docs/topics/permissions
-

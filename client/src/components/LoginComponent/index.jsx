@@ -6,8 +6,8 @@ import { useEffect } from "react";
 const LoginComponent = () => {
 
   const handleLogin = async () => {
-    // Request for login
-    window.location.href = 'https://discord.com/api/oauth2/authorize?client_id=1072076098302640128&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fumbrella&response_type=code&scope=guilds%20identify%20messages.read%20guilds.members.read';
+    // Request for login1111008271877283923
+    window.location.href = 'https://discord.com/api/oauth2/authorize?client_id=1111008271877283923&permissions=8&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fumbrella&response_type=code&scope=identify%20guilds%20bot%20connections%20guilds.members.read';
   }
   return (
     <div className="welcome-box-main d-flex flex-col j-c-c a-i-c">
